@@ -1,6 +1,6 @@
 # msc-input-assistant
 
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/msc-input-assistant) [![DeepScan grade](https://deepscan.io/api/teams/16372/projects/23419/branches/709357/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16372&pid=23419&bid=709357)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/msc-input-assistant) [![DeepScan grade](https://deepscan.io/api/teams/16372/projects/23758/branches/724986/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=16372&pid=23758&bid=724986)
 
 &lt;msc-input-assistant /> is a web component which help user to input wisely. Users could search or pick option with list we provide. Once options are not good enough for them, they can 「add」 their own options for usage. &lt;msc-input-assistant /> will save options which user added in `indexedDB`. These options will be available in the same domain.
 
