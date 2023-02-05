@@ -195,7 +195,7 @@ ${_fujiInput}
       <hr class="input-assistant__hr">
       <form class="input-assistant__form">
         <div class="input-set esc-dark-mode">
-          <input name="option" type="text" placeholder="${defaults.l10n.inputPlaceholder}" autocomplete="off" autocapitalize="off" enterkeyhint="go" />
+          <input name="option" type="text" placeholder="${defaults.l10n.inputPlaceholder}" autocomplete="off" autocapitalize="off" enterkeyhint="done" />
           <label class="input-set__label">
             <span class="input-set__label__span">${defaults.l10n.inputLabel}</span>
           </label>
