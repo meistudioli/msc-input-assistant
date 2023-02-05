@@ -175,7 +175,7 @@ ${_fujiInput}
         </a>
         <form class="input-assistant__search">
           <label class="input-assistant__label">
-            <input class="input-assistant__label__input" type="search" placeholder="Search for suggestion" />
+            <input class="input-assistant__label__input" type="search" placeholder="${defaults.l10n.search}" enterkeyhint="search" autocapitalize="off" />
           </label>
           <input type="text" class="prevent-submit" name="prevent-submit">
         </form>
@@ -195,9 +195,9 @@ ${_fujiInput}
       <hr class="input-assistant__hr">
       <form class="input-assistant__form">
         <div class="input-set esc-dark-mode">
-          <input name="suggestion" type="text" placeholder="add suggestion please" autocomplete="off" />
+          <input name="option" type="text" placeholder="${defaults.l10n.inputPlaceholder}" autocomplete="off" autocapitalize="off" enterkeyhint="go" />
           <label class="input-set__label">
-            <span class="input-set__label__span">Add suggestion</span>
+            <span class="input-set__label__span">${defaults.l10n.inputLabel}</span>
           </label>
           <em class="input-set__em"></em>
         </div>
@@ -206,7 +206,7 @@ ${_fujiInput}
           data-type="primary"
           data-size="large"
         >
-          SUBMIT
+          ${defaults.l10n.submit}
         </button>
       </form>
     </div>
@@ -378,7 +378,7 @@ export class MscInputAssistant extends HTMLElement {
       btnBack: this.shadowRoot.querySelector('[data-trigger="back"]'),
       search: this.shadowRoot.querySelector('.input-assistant__label__input'),
       form: this.shadowRoot.querySelector('.input-assistant__form'),
-      input: this.shadowRoot.querySelector('[name="suggestion"]')
+      input: this.shadowRoot.querySelector('[name="option"]')
     };
 
     // config
