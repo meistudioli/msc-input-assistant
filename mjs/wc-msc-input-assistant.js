@@ -175,7 +175,7 @@ ${_fujiInput}
         </a>
         <form class="input-assistant__search">
           <label class="input-assistant__label">
-            <input class="input-assistant__label__input" type="search" placeholder="${defaults.l10n.search}" enterkeyhint="search" autocapitalize="off" />
+            <input class="input-assistant__label__input" type="search" placeholder="${defaults.l10n.search}" autocomplete="off" autocapitalize="off" enterkeyhint="search" />
           </label>
           <input type="text" class="prevent-submit" name="prevent-submit">
         </form>
