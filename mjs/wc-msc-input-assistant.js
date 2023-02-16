@@ -118,7 +118,7 @@ ${_fujiInput}
   --a11y-block-link-expand: 2px;
 }
 
-.input-assistant{padding:var(--border-size);background-color:var(--border-color);border-radius:var(--border-radius);box-sizing:border-box;}
+.input-assistant{padding:var(--border-size);background-color:var(--border-color);border-radius:var(--border-radius);box-sizing:border-box;outline:0 none;}
 .input-assistant__content{inline-size:100%;block-size:var(--block-size);display:flex;flex-wrap:nowrap;overflow:hidden;align-items:flex-start;transition:block-size var(--transition-duration) var(--transition-timing-function);will-change:block-size;}
 .input-assistant__content__unit{flex:0 0 100%;transition:transform var(--transition-duration) var(--transition-timing-function)}
 .input-assistant__content__unit>*+*{margin-block-start:var(--main-gap);}
@@ -189,13 +189,13 @@ ${_fujiInput}
     </div>
 
     <div class="input-assistant__content__unit input-assistant__content__unit--add">
-      <a href="#back" class="input-assistant__content__add__head a11y-block-link esc-dark-mode" data-trigger="back" aria-label="back" title="back">
+      <a href="#back" class="input-assistant__content__add__head a11y-block-link esc-dark-mode" data-trigger="back" aria-label="back" title="back" tabindex="-1">
         <span class="input-assistant__content__add__head__span">${defaults.l10n.back}</span>
       </a>
       <hr class="input-assistant__hr">
       <form class="input-assistant__form">
         <div class="input-set esc-dark-mode">
-          <input name="option" type="text" placeholder="${defaults.l10n.inputPlaceholder}" autocomplete="off" autocapitalize="off" enterkeyhint="done" />
+          <input name="option" type="text" placeholder="${defaults.l10n.inputPlaceholder}" autocomplete="off" autocapitalize="off" enterkeyhint="done" tabindex="-1" />
           <label class="input-set__label">
             <span class="input-set__label__span">${defaults.l10n.inputLabel}</span>
           </label>
@@ -205,6 +205,7 @@ ${_fujiInput}
           class="buttons input-assistant__content__add__buttons"
           data-type="primary"
           data-size="large"
+          tabindex="-1"
         >
           ${defaults.l10n.submit}
         </button>
