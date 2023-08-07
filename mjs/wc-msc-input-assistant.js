@@ -725,6 +725,28 @@ export class MscInputAssistant extends HTMLElement {
     return this.results;
   }
 
+  async add(option = '') {
+    option = option.trim();
+
+    if (!option.length) {
+      return;
+    }
+
+    try {
+      await db.options.put({
+        module: this.module,
+        option,
+        self: true,
+        mtime: +new Date()
+      });
+
+      this.#render();
+      this.#fireEvent(custumEvents.add, { option });
+    } catch(err) {
+      console.warn(`${_wcl.classToTagName(this.constructor.name)}: ${err.message}`);
+    }
+  }
+
   _onModeSwitch(evt) {
     const target = evt.target.closest('a');
 

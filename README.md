@@ -217,15 +217,16 @@ Set localization for &lt;msc-input-assittant />. It will replace some message & 
 | l10n | Object | Getter / Setter for l10n. It will replace some message & button text to anything you like. Developers could set `back`、`search`、`submit`、`inputLabel` and `inputPlaceholder`. |
 | results | Array | Getter for current display options. |
 
-## Method
+## Methods
 
 | Method Signature | Description |
 | ----------- | ----------- |
 | clearStorage | Clear current storage data (by current `module`). This is an async method. |
+| add(option) | Add option. This is an async method and makes UI mutated. |
 | query(keyword) | Query options by keyword and return results. This is an async method and makes UI mutated. |
 
 
-## Event
+## Events
 
 | Event Signature | Description |
 | ----------- | ----------- |
